@@ -137,8 +137,8 @@ input, select, textarea {
 		}
 
 	body {
-		background-color: #fff;
-		color: #aaa;
+		background: linear-gradient(to bottom, #191714, #2234AE); /* Dark purple to blue gradient */
+		color: #FFFFFF; /* Change font color to light (white) */
 	}
 
 	body, input, select, textarea {
@@ -166,7 +166,7 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 400;
-		color: #555;
+		color: #dedede;
 	}
 
 	em, i {
@@ -181,7 +181,7 @@ input, select, textarea {
 		font-weight: 400;
 		line-height: 1.25;
 		margin: 0 0 0.5em 0;
-		color: #555;
+		color: #dedede;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -291,7 +291,7 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 4px;
 		border: solid 1px #ccc;
-		color: #555;
+		color: #dedede;
 		cursor: pointer;
 		display: inline-block;
 		line-height: 1;
@@ -378,7 +378,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #555;
+		color: #dedede;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 400;
@@ -432,8 +432,8 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #555;
-			background: #fff;
+			color: #dedede;
+			background: linear-gradient(to bottom, #191714, #2234AE); /* Dark purple to blue gradient */
 		}
 
 		select:focus::-ms-value {
@@ -553,8 +553,8 @@ input, select, textarea {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background-color: #555;
-			border-color: #555;
+			background-color: #dedede;
+			border-color: #dedede;
 			color: #fff;
 			content: '\f00c';
 		}
@@ -839,7 +839,7 @@ input, select, textarea {
 		top: 0;
 		width: 22.5em;
 		height: 100%;
-		background: #fff;
+		background: linear-gradient(to bottom, #191714, #2234AE); /* Dark purple to blue gradient */
 		outline: 0;
 		overflow-x: hidden;
 		overflow-y: auto;
@@ -907,7 +907,7 @@ input, select, textarea {
 				-ms-transition: opacity 0.5s ease, visibility 0.5s;
 				transition: opacity 0.5s ease, visibility 0.5s;
 				width: 100%;
-				background: #fff;
+				background: linear-gradient(to bottom, #191714, #2234AE); /* Dark purple to blue gradient */
 				text-align: center;
 			}
 
@@ -935,6 +935,8 @@ input, select, textarea {
 	}
 
 		#header h1 {
+			color: white;
+			text-shadow: 2px 2px 4px #1e1e1e;
 			font-size: 2.25em;
 			font-weight: 700;
 		}
