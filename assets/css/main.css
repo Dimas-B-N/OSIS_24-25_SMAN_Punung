@@ -108,8 +108,10 @@ input, select, textarea {
 	}
 
 	html, body {
-		background-color: #101010;
-		overflow: hidden;
+		background-image: url('images/cartographer.webp'); /* Update with your pattern image path */
+    	background-repeat: repeat; /* Ensure the pattern repeats */
+    	background-color: transparent; /* Optionally set this to transparent */
+   		overflow: hidden;
 	}
 
 /* Type */
