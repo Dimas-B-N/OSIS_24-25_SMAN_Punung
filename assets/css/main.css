@@ -1132,8 +1132,8 @@ input, select, textarea {
 				position: absolute;
 				top: 0;
 				left: 0;
-				width: 100%;
-				height: 100%;
+				width: 10%;
+				height: 10%;
 			}
 
 			#viewer .inner .toggle {
@@ -1188,6 +1188,7 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
+			position: relative;
 			opacity: 1;
 			z-index: 1;
 		}
@@ -1210,7 +1211,24 @@ input, select, textarea {
 					color: #fff;
 				}
 
-			#viewer .slide .image {
+
+				#viewer .slide .image {
+					-moz-transition: opacity 0.5s ease-in-out;
+					-webkit-transition: opacity 0.5s ease-in-out;
+					-ms-transition: opacity 0.5s ease-in-out;
+					transition: opacity 0.5s ease-in-out;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: center;
+					opacity: 0;
+				}
+
+			#viewer .slide .image img {
 				-moz-transition: opacity 0.5s ease-in-out;
 				-webkit-transition: opacity 0.5s ease-in-out;
 				-ms-transition: opacity 0.5s ease-in-out;
@@ -1219,9 +1237,12 @@ input, select, textarea {
 				top: 0;
 				left: 0;
 				width: 100%;
-				height: 100%;
+				height: auto;
+				max-height: 100%; /* Prevent overflow */
+    			display: block; /* Remove any inline spacing */
 				background-repeat: no-repeat;
-				background-size: cover;
+				background-size: contain;
+				background-position: center;
 				opacity: 0;
 			}
 
