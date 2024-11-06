@@ -136,7 +136,7 @@ input, select, textarea {
 
 		}
 
-	body {
+	body { 
 		background: linear-gradient(to bottom, #191714, #2234AE); /* Dark purple to blue gradient */
 		color: #FFFFFF; /* Change font color to light (white) */
 	}
@@ -431,7 +431,7 @@ input, select, textarea {
 		text-overflow: ellipsis;
 	}
 
-		select option {
+		select option { /* Tampilan Desktop */
 			color: #dedede;
 			background: linear-gradient(to bottom, #191714, #2234AE); /* Dark purple to blue gradient */
 		}
@@ -829,7 +829,7 @@ input, select, textarea {
 
 /* Main */
 
-	#main {
+	#main { /* Tampilan Desktop lagi... ketoe?? */
 		-moz-transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
 		-webkit-transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
 		-ms-transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
@@ -887,10 +887,10 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 980px) {
-
+		@media screen and (max-width: 980px) { /* Tampilan Tablet */
+ 
 			#main {
-				background: rgba(255, 255, 255, 0.925);
+				background: linear-gradient(to bottom, #191714, #2234AE);
 			}
 
 				#main .toggle {
@@ -899,7 +899,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 480px) { /* Tampilan HP */
 
 			#main {
 				-moz-transition: opacity 0.5s ease, visibility 0.5s;
